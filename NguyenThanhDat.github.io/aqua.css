@@ -1,0 +1,105 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { overflow: hidden; }
+
+/* ===== BACKGROUND ===== */
+.aquarium {
+  position: fixed;
+  inset: 0;
+  background: url("aquarium/OIP.webp") center/cover no-repeat;
+  overflow: hidden;
+}
+
+.btn-bg {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #00c2d1;
+  border: none;
+  color: white;
+  font-size: 18px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* ===== 3 THỢ LẶN ===== */
+.diver {
+  position: absolute;
+  height: 16vh;
+  top: var(--top);
+  animation: swim 18s linear infinite;
+  animation-delay: calc(var(--offset) * -1);
+}
+
+/* bơi trái → phải → quay đầu → bơi lại */
+@keyframes swim {
+  0%   { left: -20vw; transform: scaleX(1); }
+  49%  { left: 60vw;  transform: scaleX(1); }
+  50%  { left: 60vw;  transform: scaleX(-1); }
+  100% { left: -20vw; transform: scaleX(-1); }
+}
+
+/* ===== CÁ MẬP ===== */
+.shark {
+  position: absolute;
+  top: 24vh;
+  height: 22vh;
+  animation: sharkSwim 12s linear infinite;
+}
+@keyframes sharkSwim {
+  0%   { left: -30vw; transform: scaleX(1); }
+  50%  { left: 90vw;  transform: scaleX(1); }
+  51%  { left: 90vw;  transform: scaleX(-1); }
+  100% { left: -30vw; transform: scaleX(-1); }
+}
+
+/* ===== RÙA ===== */
+.turtle {
+  position: absolute;
+  top: 85vh;
+  height: 12vh;
+  animation: turtleSwim 24s linear infinite;
+}
+@keyframes turtleSwim {
+  0%   { left: -30vw; transform: scaleX(1); }
+  50%  { left: 90vw;  transform: scaleX(1); }
+  51%  { left: 90vw;  transform: scaleX(-1); }
+  100% { left: -30vw; transform: scaleX(-1); }
+}
+
+/* ===== ĐÀN CÁ VÀNG ===== */
+.goldfish {
+  position: absolute;
+  top: 55vh;
+  height: 14vh;
+  animation: goldSwim 14s linear infinite;
+}
+@keyframes goldSwim {
+  0%   { left: -40vw; transform: scaleX(1); }
+  50%  { left: 90vw;  transform: scaleX(1); }
+  51%  { left: 90vw;  transform: scaleX(-1); }
+  100% { left: -40vw; transform: scaleX(-1); }
+}
+
+/* ===== BONG BÓNG ===== */
+.bubble {
+  position: absolute;
+  bottom: -10vh;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  animation: rise 7s linear infinite;
+}
+
+.b1 { left: 10vw; animation-delay: 0s; }
+.b2 { left: 30vw; animation-delay: 2s; }
+.b3 { left: 50vw; animation-delay: 4s; }
+
+@keyframes rise {
+  0%   { bottom: -10vh; opacity: 0; }
+  30%  { opacity: 1; }
+  100% { bottom: 110vh; opacity: 0; }
+}
