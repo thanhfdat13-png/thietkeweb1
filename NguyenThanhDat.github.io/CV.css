@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e9e9e9;
+}
+
+.cv {
+    width: 900px;
+    margin: 30px auto;
+    display: flex;
+    background: white;
+}
+
+/* ===== LEFT ===== */
+.left {
+    width: 35%;
+    background: #3a3a3a;
+    color: white;
+    padding: 30px;
+}
+
+.avatar-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+}
+
+.left h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    border-bottom: 2px solid #777;
+    padding-bottom: 5px;
+}
+
+.left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skills li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.bar {
+    width: 100%;
+    background: #777;
+    height: 5px;
+    margin-top: 3px;
+    position: relative;
+}
+
+.bar span {
+    display: block;
+    height: 5px;
+    background: white;
+}
+
+/* ===== RIGHT ===== */
+.right {
+    width: 65%;
+    padding: 40px;
+    border-left: 2px solid #ccc;
+}
+
+.right h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.right h3 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #555;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.item {
+    margin-top: 15px;
+}
+
+.item h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
