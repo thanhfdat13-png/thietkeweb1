@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đặc sản vùng miền</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo">Đặc Sản 3 Miền</div>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="products.html">Đặc sản</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="auth.html">Tài khoản</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <div class="product-header">
+    <h2>Danh sách món đặc sản</h2>
+    <div>
+      <label for="region-filter" style="font-size:14px;margin-right:6px;">Lọc theo vùng:</label>
+      <select id="region-filter">
+        <option value="all">Tất cả</option>
+        <option value="Miền Bắc">Miền Bắc</option>
+        <option value="Miền Trung">Miền Trung</option>
+        <option value="Miền Nam">Miền Nam</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="product-list" class="product-grid">
+    <!-- JS sẽ render product-card ở đây -->
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
