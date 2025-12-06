@@ -5,42 +5,41 @@ const defaultProducts = [
     name: "Bún bò Huế",
     region: "Miền Trung",
     desc: "Sợi bún to, nước dùng đậm đà, đặc trưng xứ Huế.",
-    img: "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600"
+    img: "https://cdn.mediamart.vn/images/news/hc-cach-nu-bun-bo-hu-thom-ngon-dung-chun-huong-v_519e659c.jpg"
   },
   {
     id: 2,
     name: "Cơm tấm Sài Gòn",
     region: "Miền Nam",
     desc: "Sườn, bì, chả, mỡ hành thơm lừng.",
-    img: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROC7PVtIOtTihOaYgqnlM52808MqprVwORng&s"
   },
   {
     id: 3,
     name: "Phở bò Hà Nội",
     region: "Miền Bắc",
     desc: "Nước dùng trong, thơm, ngọt xương.",
-    img: "https://images.pexels.com/photos/1431305/pexels-photo-1431305.jpeg?auto=compress&cs=tinysrgb&w=600"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUOMgyx2ev7jcp6HeuEm8J-y5dKlDWK-_vAw&s"
   },
   {
     id: 4,
     name: "Bánh xèo miền Tây",
     region: "Miền Nam",
     desc: "Vỏ giòn, nhân tôm thịt, ăn kèm rau sống.",
-    img: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=600"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFzjUErarKZNJ1vObmCeHY1c1_EWHXFY881A&s"
   },
   {
     id: 5,
     name: "Bánh cuốn Thanh Trì",
     region: "Miền Bắc",
     desc: "Bánh mỏng, mềm, ăn kèm chả và nước chấm.",
-    img: "https://images.pexels.com/photos/533325/pexels-photo-533325.jpeg?auto=compress&cs=tinysrgb&w=600"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe7DubuptTDOPKLsX7Rvw2OqfrfDP5MNuatA&s"
   }
 ];
 
 function initProducts() {
-  if (!localStorage.getItem("products")) {
-    localStorage.setItem("products", JSON.stringify(defaultProducts));
-  }
+  localStorage.setItem("products", JSON.stringify(defaultProducts));
+  
 }
 
 // ==== 2. Hiển thị sản phẩm trên trang products.html ====
