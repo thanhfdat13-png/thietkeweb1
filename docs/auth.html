@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tài khoản</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo">Đặc Sản 3 Miền</div>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="products.html">Đặc sản</a></li>
+      <li><a href="about.html">Giới thiệu</a></li>
+      <li><a href="auth.html">Tài khoản</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="box">
+    <h1>Quản lý tài khoản</h1>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" data-target="tab-login">Đăng nhập</button>
+      <button class="tab-btn" data-target="tab-register">Đăng ký</button>
+      <button class="tab-btn" data-target="tab-change">Đổi mật khẩu</button>
+      <button class="tab-btn" data-target="tab-feedback">Góp ý</button>
+    </div>
+
+    <!-- Đăng nhập -->
+    <div class="tab-content active" id="tab-login">
+      <form id="loginForm">
+        <label>Tên đăng nhập</label>
+        <input type="text" id="login-username">
+
+        <label>Mật khẩu</label>
+        <input type="password" id="login-password">
+
+        <button type="submit">Đăng nhập</button>
+      </form>
+    </div>
+
+    <!-- Đăng ký -->
+    <div class="tab-content" id="tab-register">
+      <form id="registerForm">
+        <label>Tên đăng nhập</label>
+        <input type="text" id="reg-username">
+
+        <label>Mật khẩu</label>
+        <input type="password" id="reg-password">
+
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+
+    <!-- Đổi mật khẩu -->
+    <div class="tab-content" id="tab-change">
+      <form id="changeForm">
+        <label>Tên đăng nhập</label>
+        <input type="text" id="change-username">
+
+        <label>Mật khẩu cũ</label>
+        <input type="password" id="old-password">
+
+        <label>Mật khẩu mới</label>
+        <input type="password" id="new-password">
+
+        <button type="submit">Đổi mật khẩu</button>
+      </form>
+    </div>
+
+    <!-- Góp ý -->
+    <div class="tab-content" id="tab-feedback">
+      <form id="feedbackForm">
+        <label>Họ tên</label>
+        <input type="text" id="fb-name">
+
+        <label>Góp ý về website / món ăn</label>
+        <textarea id="fb-message" rows="4"></textarea>
+
+        <button type="submit">Gửi góp ý</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
